@@ -1,0 +1,26 @@
+.navbar {
+	display: flex;
+	flex-direction:row;
+	height: 50px;
+	justify-content: space-around;
+	padding: 0;
+}
+
+.flex {
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+	align-content:center;
+
+}
+
+a {
+		background-color: $color_link_background;
+		width: auto;
+		@include shadow();
+		@include gradient(#000, #fff);
+		padding: 1em;
+		&:hover {
+			@include gradient(#333, #eee);
+		}
+	}
